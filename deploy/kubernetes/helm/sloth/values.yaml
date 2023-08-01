@@ -23,6 +23,7 @@ sloth:
   labelSelector: ""     # Sloth will handle only the ones that match the selector.
   namespace: ""         # The namespace where sloth will the CRs to process.
   extraLabels: {}       # Labels that will be added to all the generated SLO Rules.
+  extraFilterLabels: {} # Labels that should be used as a template in queries provided in SLO spec
   defaultSloPeriod: ""  # The slo period used by sloth (e.g. 30d).
   optimizedRules: true  # Reduce prom load for calculating period window burnrates.
   debug:
